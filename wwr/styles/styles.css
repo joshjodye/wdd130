@@ -1,15 +1,16 @@
-body{
-    background-color: #add8e6;
+body {
+    background-color: #38686A;
     font-family: Georgia, 'Times New Roman', Times, serif
 }
 
 header {
-    background-color: aqua;
+    background-color: #101935;
 }
 #content {
     max-width: 1600px;
-    background-color: white;
+    background-color: #A9BCD0;
     margin: 0 auto;
+    text-align: center;
 }
 nav , footer {
     background-color: steelblue;
@@ -19,6 +20,7 @@ nav , footer {
 }
 
 nav a {
+    text-align: center;
     padding: 15px;
     font-size: 20px;
     text-decoration: none;
@@ -33,6 +35,7 @@ nav a:hover {
 
 #background {
     height: 725px;
+    background-color: #92374D
 }
 h1 {
     text-align: center;
@@ -45,6 +48,22 @@ img {
     margin: 0 auto;
 }
 
+.logo {
+    width: 200px;
+}
+
+.icon {
+    width: 80px;
+}
+.social img {
+    width: 30px;
+}
+#hero-img {
+    width: 100%;
+}
+.msg {
+    text-align: center;
+}
 p {
     padding: 0 30px;
     line-height: 1.5em;
@@ -57,6 +76,12 @@ p {
 
 footer {
     margin-top: 50px;
+}
+footer p {
+    font-size: 1.2em;
+}
+footer p a:hover {
+    text-decoration: underline;
 }
 footer a {
     color:white;

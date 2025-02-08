@@ -1,10 +1,14 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rock+Salt&display=swap');
+body {   
     background-color: #38686A;
-    font-family: Georgia, 'Times New Roman', Times, serif
+    margin: 0;
+    padding: 0;
+    font-family: 'Archivo', 'Lato', 'Rock Salt', serif
 }
 
 header {
     background-color: #101935;
+    text-align: left;
 }
 #content {
     max-width: 1600px;
@@ -13,10 +17,10 @@ header {
     text-align: center;
 }
 nav , footer {
-    background-color: steelblue;
+    background-color: #101935;
     padding: 20px;
     color: white;
-    text-align: center;
+    text-align: left;
 }
 
 nav a {
@@ -39,51 +43,94 @@ nav a:hover {
 }
 h1 {
     text-align: center;
+    font-family: 'Rock Salt', cursive;
+    color: #101935
 }
-
+h2 {
+    text-align: center;
+}
 img {
     width: 500px;
-    /* text-align: center; */
     display: block;
     margin: 0 auto;
 }
 
 .logo {
-    width: 200px;
+    width: 150px;
 }
 
 .icon {
+    gap: 15px;
+    text-align: left;
+    padding: 10px;
     width: 80px;
 }
 .social img {
     width: 30px;
+    gap: 15px;
 }
 #hero-img {
     width: 100%;
 }
 .msg {
     text-align: center;
+    background-color: steelblue;
+    padding: 25px;
 }
 p {
-    padding: 0 30px;
+    padding: 10px 30px;
     line-height: 1.5em;
     width: 800px;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 #main-topic {
     color: steelblue;
 }
 
 footer {
-    margin-top: 50px;
+    margin-top: 200px;
+    text-align: left;
 }
 footer p {
     font-size: 1.2em;
+    text-align: left;
 }
 footer p a:hover {
     text-decoration: underline;
 }
 footer a {
     color:white;
+}
+.card-img {
+   height: auto;
+   border: 5px solid steelblue;
+}
+main section img {
+    box-sizing: border-box;
+}
+.rivers-card , .camping-card , .rapids-card {
+    margin: 100px 0;
+}
+.home-title {
+    margin-top: 10px;
+}
+.book, .join {
+    background-color: lightblue;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 30px;
+    margin-top: 50px;
+}
+.mountains {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 0;
+    margin-right: 0;
+}
+h4 {
     text-align: center;
+}
+.logo_link {
+    padding: 10px;
 }

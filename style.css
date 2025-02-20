@@ -13,9 +13,7 @@ header {
     background-color: white;
     margin: 0 auto;
 }
-nav {
-    display: flex;
-}
+
 nav , footer {
     background-color: steelblue;
     padding: 20px;

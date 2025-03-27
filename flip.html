@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Card</title>
+    <style>
+        /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 470px;
+  height: 100%;
+  border: 1px solid #f1f1f1;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 470px;
+  height: 300px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 470px;
+  height: 300px;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: white;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #0047AB;
+  color: white;
+  transform: rotateY(180deg);
+}
+    </style>
+</head>
+<body>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="flag.jpg" alt="Flag" style="width:470px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>El Salvador</h1>
+            <p>May 27th, 1912</p>
+            <p>Known for its scenic volcanoes, beaches, and rich cultural history, El Salvador has a growing economy largely based on remittances and services. 
+                Their flag consists of three horizontal stripes: blue on the top and bottom and white in the center.
+                The blue represents the sky and the Pacific Ocean, while the white symbolizes peace and unity. 
+                 The national coat of arms, centered on the flag, features a triangle with five volcanoes, 
+                 a red Phrygian cap, rays of light, and a rainbow—symbols of liberty and peace.</p>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
